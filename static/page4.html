@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>آشنایی با المپیاد</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            direction: rtl;
+        }
+
+        body {
+            padding: 10px;
+            background: #d9d9d9;
+        }
+
+        .header {
+            padding: 30px;
+            text-align: center;
+            background: white;
+        }
+
+        .header h1 {
+            font-size: 50px;
+        }
+
+        .navbar {
+            display: block;
+            background-color: #333;
+        }
+
+        .navbar::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .navbar a {
+            float: right;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover:not(.active) {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .row {
+            margin-top: 20px;
+        }
+
+        h3 {
+            padding: 10px;
+        }
+
+        .post {
+            display: block;
+            padding: 20px;
+            background-color: whitesmoke;
+        }
+
+        .rightcolumn {
+            float: right;
+            width: 25%;
+            background:  #d9d9d9;
+            padding-left: 20px;
+        }
+
+        .vnavbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .vnavbar a {
+            display: block;
+            color: black;
+            background-color: lightgray;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        .vnavbar a:hover {
+            background-color: #555;
+            color: white;
+        }
+
+        .navbar a.active, .vnavbar a.active {
+            background-color: gray;
+            color: white;
+        }
+
+        .leftcolumn {
+            float: right;
+            width: 75%;
+        }
+
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .footer {
+            padding: 20px;
+            margin-top: 20px;
+            background: #bfbfbf;
+            text-align: center;
+        }
+
+        .leftcolumn .post a {
+            color: lightblue;
+            text-decoration: none;
+        }
+
+        .leftcolumn .post a:hover {
+            color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>آشنایی با المپیاد</h1>
+</div>
+
+<div class="navbar">
+    <a href="/">صفحه اصلی</a>
+    <a href="form-page">مطلب جدید</a>
+</div>
+
+<div class="row">
+    <div class="rightcolumn">
+        <div class="post">
+            <ul class="vnavbar">
+                <h3>آخرین مطالب</h3>
+                <li><a class="active" href="page4">مزیت های شرکت کردن در المپیاد</a></li>
+                <li><a href="page3">آشنایی با المپیاد کامپیوتر</a></li>
+                <li><a href="page2">آشنایی با المپیاد ریاضی</a></li>
+                <li><a href="page1">المپیاد چیست؟</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="leftcolumn">
+        <div class="post">
+            <h3>مزیت های شرکت کردن در المپیاد</h3>
+            <p>
+                مزیت‌های المپیادی شدن را می‌توان به جوایز بیرونی و دستاوردهای درونی یک فرد تقسیم کرد:
+            </p>
+            <h4>جوایز بیرونی</h4>
+            <ol>
+                <li>بنیاد ملی نخبگان، وزارت علوم و سازمان نظام وظیفه هر یک جوایزی را برای دانش‌آموزان المپیادی در نظر گرفته‌اند که در زیر به برخی از این موارد اشاره می‌شود:</li>
+                <li>معافیت از کنکور سراسری در رشته‌های مربوط برای مدال‌آوران طلایی هر رشته</li>
+                <li>اضافه شدن 10 درصد به تراز کنکور دانش‌آموزانی که در المپیادهای علمی مدال‌های نقره یا برنز
+                    کسب کرده‌اند و همچنین طلایی‌هایی که در شته‌ی غیرمرتبط قصد ادامه‌ی تحصیل دارند.</li>
+                <li>انجام خدمت سربازی (پسران) با انجام پروژه‌های علمی و تحقیقاتی</li>
+                <li>پرداخت وام‌های کم‌بهره برای خرید مسکن، خودرو و سفرهای تحقیقاتی از طرف بنیاد ملی نخبگان</li>
+                <li>امکان ادامه‌ی تحصیل در دو رشته به صورت همزمان در دانشگاه‌ها</li>
+                <li>استفاده از سهمیه‌ی نخبگان در هنگام استخدام در مشاغل دولتی</li>
+                <li>و ...</li>
+            </ol>
+            <p>برای اطلاع از دیگر مزایا و یا تغییرات در موارد فوق، به <a href="https://www.bmn.ir/">سایت بنیاد ملی نخبگان</a>
+                مراجعه نمایید. همچنین دانشگاه‌ها، ادارات آموزش و پرورش و مدارس نیز جوایزی
+                را به صورت نقدی یا اعتباری برای دانش‌آموزان در نظر می‌گیرند که این مورد در
+                شهرها و مدارس و دانشگاه‌های مختلف تفاوت‌های زیادی دارد و از معافیت حضور در
+                یک کلاس خاص تا جوایز نقدی و تفریحی و وام‌های دانشجویی بدون بهره را شامل می‌شود.
+            </p>
+            <h4>جوایز درونی</h4>
+            <p>
+                علاوه بر مدال‌آوران المپیاد، تمام کسانی که در زمینه‌ی المپیادهای علمی فعالیت جدی دارند، از نتایج آن سود
+                می‌برند. به طور خلاصه، فایده‌ی المپیادی شدن برای یک دانش‌آموز دبیرستانی را می‌توان در بخش‌های زیر دید:
+            </p>
+            <ol>
+                <li>عمق‌دهی به مطالب نظری و نزدیک کردن یادگیری به استدلال و استنتاج</li>
+                <li>درک لذت یادگیری به دلیل نبودن اجبار و سرفصل‌های محدودکننده</li>
+                <li>ورود به جو رقابت و ایجاد هیجان سالم که لازمه‌ی سنین نوجوانی است</li>
+                <li>آموختن روش‌های یادگیری و برنامه‌ریزی شخصی که در مراحل بعدی تحصیل بسیار مفید خواهد بود</li>
+                <li>تصمیم‌گیری در مورد رشته و شغل آینده در زمان مناسب</li>
+                <li>و ...</li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <h6>اکثر حقوق این سایت برای کوروش کاوه محزون است.</h6>
+</div>
+
+</body>
+</html>

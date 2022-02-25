@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>آشنایی با المپیاد</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            direction: rtl;
+        }
+
+        body {
+            padding: 10px;
+            background: #d9d9d9;
+        }
+
+        .header {
+            padding: 30px;
+            text-align: center;
+            background: white;
+        }
+
+        .header h1 {
+            font-size: 50px;
+        }
+
+
+        .navbar {
+            display: block;
+            background-color: #333;
+        }
+
+        .navbar::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .navbar a {
+            float: right;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover:not(.active) {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .navbar a.active, .vnavbar a.active {
+            background-color: gray;
+            color: white;
+        }
+
+        .row {
+            margin-top: 20px;
+        }
+
+        .row form {
+            margin: auto;
+            width: 50%;
+        }
+
+        .row form input[type=text], .row form textarea {
+            margin-bottom: 6px;
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        .row form textarea {
+            direction: ltr;
+            height: 300px;
+        }
+
+        .row form h4 {
+            padding-right: 8px;
+            margin-top: 0px;
+            margin-bottom: 6px;
+        }
+        .row form input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: left;
+        }
+
+        .row form::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        h3 {
+            padding: 10px;
+        }
+
+        .post {
+            display: block;
+            padding: 20px;
+            background-color: whitesmoke;
+        }
+
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .footer {
+            padding: 20px;
+            margin-top: 20px;
+            background: #bfbfbf;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>آشنایی با المپیاد</h1>
+</div>
+
+<div class="navbar">
+    <a href="/">صفحه اصلی</a>
+    <a class="active" href="form-page">مطلب جدید</a>
+</div>
+
+<div class="row">
+    <div class="post">
+        <form method="post">
+            <h4>تیتر:</h4>
+            <input type="text" name="Title" placeholder="عنوان مطلب" required>
+            <h4>محتوا:</h4>
+            <textarea name="Content" placeholder="محتوای مطلب" required><p>
+    پیشنهاد میشود متن شما در بین تگ های اچ تی ام ال قرار گرفته باشد.
+    مانند چیزی که اکنون مشاهده می کنید.
+</p></textarea>
+            <input type="submit" value="اضافه کردن">
+        </form>
+    </div>
+</div>
+
+<div class="footer">
+    <h6>اکثر حقوق این سایت برای کوروش کاوه محزون است.</h6>
+</div>
+
+</body>
+</html>

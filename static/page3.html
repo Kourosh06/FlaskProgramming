@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>آشنایی با المپیاد</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            direction: rtl;
+        }
+
+        body {
+            padding: 10px;
+            background: #d9d9d9;
+        }
+
+        .header {
+            padding: 30px;
+            text-align: center;
+            background: white;
+        }
+
+        .header h1 {
+            font-size: 50px;
+        }
+
+        .navbar {
+            display: block;
+            background-color: #333;
+        }
+
+        .navbar::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .navbar a {
+            float: right;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover:not(.active) {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .row {
+            margin-top: 20px;
+        }
+
+        h3 {
+            padding: 10px;
+        }
+
+        .post {
+            display: block;
+            padding: 20px;
+            background-color: whitesmoke;
+        }
+
+        .rightcolumn {
+            float: right;
+            width: 25%;
+            background:  #d9d9d9;
+            padding-left: 20px;
+        }
+
+        .vnavbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .vnavbar a {
+            display: block;
+            color: black;
+            background-color: lightgray;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        .vnavbar a:hover {
+            background-color: #555;
+            color: white;
+        }
+
+        .navbar a.active, .vnavbar a.active {
+            background-color: gray;
+            color: white;
+        }
+
+        .leftcolumn {
+            float: right;
+            width: 75%;
+        }
+
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .footer {
+            padding: 20px;
+            margin-top: 20px;
+            background: #bfbfbf;
+            text-align: center;
+        }
+
+        .leftcolumn .post a {
+            color: lightblue;
+            text-decoration: none;
+        }
+
+        .leftcolumn .post a:hover {
+            color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>آشنایی با المپیاد</h1>
+</div>
+
+<div class="navbar">
+    <a href="/">صفحه اصلی</a>
+    <a href="form-page">مطلب جدید</a>
+</div>
+
+<div class="row">
+    <div class="rightcolumn">
+        <div class="post">
+            <ul class="vnavbar">
+                <h3>آخرین مطالب</h3>
+                <li><a href="page4">مزیت های شرکت کردن در المپیاد</a></li>
+                <li><a class="active" href="page3">آشنایی با المپیاد کامپیوتر</a></li>
+                <li><a href="page2">آشنایی با المپیاد ریاضی</a></li>
+                <li><a href="page1">المپیاد چیست؟</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="leftcolumn">
+        <div class="post">
+            <h3>آشنایی با المپیاد کامپیوتر</h3>
+            <p>
+                المپیاد کامپیوتر شاید یکی از مفهومی‌ترین المپیادها باشد. مباحث موجود در این المپیاد
+                معمولاً در مدرسه آموزش داده نمی‌شود. ولی برای قبولی در مرحله اول و دوم نیازی به دانش برنامه‌نویسی- کامپیوتر-
+                نیست؛ هر چند دانستن آن کمک شایانی به درک بهتر مباحث مورد نیاز در این دو مرحله می‌کند. اغلب سؤال‌ها و مباحث
+                مطرح شده در مرحله اول و دوم فکری و به نوعی سنجش مهارت حل مسأله است. بنابراین تقویت مهارت حل مسأله (که
+                اغلب با حل مسأله‌های متعدد به دست می‌آید) مهم‌ترین بحث در المپیاد کامپیوتر است. یعنی در المپیاد کامپیوتر،
+                ما درست نگاه کردن به مسئله و هجوم بردن به مسأله از زوایای متعدد را یاد می‌گیریم.در این برنامه ابتدا
+                شما با مراحل المپیاد کامپیوتر در ایران آشنا می‌شوید و سپس مباحث و منابع پیشنهادی برای هر یک را خواهید دید.
+            </p>
+            <p>
+                این المپیاد در حال حاضر و در شرایط عادی طی چهار مرحله(مرحله اول تا سوم و دوره تابستانی) برگزار می گردد.
+            </p>
+            <p>
+                آزمون مرحله اول شامل حدوداً ۳۰ سؤال
+                تستی پنج گزینه‌ای است که با هدف سنجش هوش شرکت‌کنندگان و با نیاز به حداقل دانش قبلی طراحی شده‌است. حدوداً
+                ۱۲ درصد برتر شرکت کنندگان این مرحله و همچنین ۱۰ نفر برتر هر استان برای آزمون مرحلهٔ دوم برگزیده می‌شوند.
+            </p>
+            <p>
+                آزمون مرحله دوم در دو روز برگزار می‌شود که روز اول
+                آن تستی و روز دوم، تشریحی می‌باشد. معمولاً حدود ۷۵ نفر برتر این آزمون برای آزمون مرحله سوم برگزیده می‌شوند.
+            </p>
+            <p>
+                آزمون مرحله سوم به صورت برنامه‌نویسی می‌باشد و حدوداً ۴۰ نفر در آن برای دورهٔ
+                تابستان برگزیده می‌شوند، سؤال‌های این آزمون معمولاً سؤال‌هایی هستند که بدون استفاده از الگوریتم‌های پیچیده
+                حل می‌شوند، برای حل این سؤال‌ها دانش‌پژوه باید مانند مرحله ۲ سؤال‌ها را به صورت نظری حل کند، سپس آن را به
+                صورت کد پیاده‌سازی کند، البته در این سؤال‌ها از الگوریتم‌هایی مانند الگوریتم‌های اولیه گراف و برنامه‌نویسی
+                پویا نیز استفاده می‌شود، همچنین مهارت در نوشتن کدهای پسگرد (backtrack) بسیار تأثیرگذار و کاربردی است.
+            </p>
+            <p>
+                افرادی که در مرحلهٔ سوم برگزیده می‌شوند
+                تابستان تحت آموزش قرار می‌گیرند و در نهایت به دانش پژوهان مدال‌های برنز، نقره و طلا به صورت زیر داده می‌شود:<br><br>
+                به ۸ نفر اول دوره تابستان مدال طلا اهدا خواهد شد.<br><br>
+                به نفرات ۹ تا ۲۴ دوره تابستان مدال نقره اهدا خواهد شد.<br><br>
+                به دیگر دانش‌پژوهان مدال برنز اهدا خواهد شد.<br><br>
+                دارندگان نشان طلا به دورهٔ یک‌سالهٔ آمادگی تیم
+                جهانی دعوت می‌شوند و از میان آنان، ۴ نفر به عنوان نماینده ایران در المپیاد جهانی انتخاب می‌گردند.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <h6>اکثر حقوق این سایت برای کوروش کاوه محزون است.</h6>
+</div>
+
+</body>
+</html>

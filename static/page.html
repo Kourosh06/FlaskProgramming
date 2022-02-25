@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>آشنایی با المپیاد</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            direction: rtl;
+        }
+
+        body {
+            padding: 10px;
+            background: #d9d9d9;
+        }
+
+        .header {
+            padding: 30px;
+            text-align: center;
+            background: white;
+        }
+
+        .header h1 {
+            font-size: 50px;
+        }
+
+        .navbar {
+            display: block;
+            background-color: #333;
+        }
+
+        .navbar::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .navbar a {
+            float: right;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover:not(.active) {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .row {
+            margin-top: 20px;
+        }
+
+        h3 {
+            padding: 10px;
+        }
+
+        .post {
+            display: block;
+            padding: 20px;
+            background-color: whitesmoke;
+        }
+
+        .rightcolumn {
+            float: right;
+            width: 25%;
+            background:  #d9d9d9;
+            padding-left: 20px;
+        }
+
+        .vnavbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .vnavbar a {
+            display: block;
+            color: black;
+            background-color: lightgray;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        .vnavbar a:hover {
+            background-color: #555;
+            color: white;
+        }
+
+        .navbar a.active, .vnavbar a.active {
+            background-color: gray;
+            color: white;
+        }
+
+        .leftcolumn {
+            float: right;
+            width: 75%;
+        }
+
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .footer {
+            padding: 20px;
+            margin-top: 20px;
+            background: #bfbfbf;
+            text-align: center;
+        }
+
+        .leftcolumn .post a {
+            color: lightblue;
+            text-decoration: none;
+        }
+
+        .leftcolumn .post a:hover {
+            color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>آشنایی با المپیاد</h1>
+</div>
+
+<div class="navbar">
+    <a class="active" href="/">صفحه اصلی</a>
+    <a href="form-page">مطلب جدید</a>
+</div>
+
+<div class="row">
+    <div class="rightcolumn">
+        <div class="post">
+            <ul class="vnavbar">
+                <h3>آخرین مطالب</h3>
+                <li><a href="page4">مزیت های شرکت کردن در المپیاد</a></li>
+                <li><a href="page3">آشنایی با المپیاد کامپیوتر</a></li>
+                <li><a href="page2">آشنایی با المپیاد ریاضی</a></li>
+                <li><a href="page1">المپیاد چیست؟</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="leftcolumn">
+    </div>
+</div>
+
+<div class="footer">
+    <h6>اکثر حقوق این سایت برای کوروش کاوه محزون است.</h6>
+</div>
+
+</body>
+</html>
